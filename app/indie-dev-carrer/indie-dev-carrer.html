@@ -1,0 +1,59 @@
+<div class="career-section" id="game-dev-carrer">
+  <h2 class="career-heading">Indie-Dev Career</h2>
+  <div class="career-cards">
+    <!-- Chrono -->
+    <app-career-card
+      [media]="[
+        { type: 'video', url: 'https://www.youtube.com/embed/oHSmdalMHRI' }
+      ]"
+      title="Chrono"
+      [items]="chronoItems"
+    >
+    </app-career-card>
+
+    <!-- The Lich Queen -->
+    <app-career-card
+      [media]="[
+        {
+          type: 'image',
+          url: 'https://img.itch.zone/aW1hZ2UvMjM5ODc0MS8xNDE5OTQyOS5wbmc=/original/fFNF%2BX.png'
+        }
+      ]"
+      title="The Lich Queen"
+      [items]="[
+        'Action RPG: Lead developer of an RPG videogame where the player controls a necromancer who builds an army to conquer the world. Part of a team that submitted the game to Game Off 2023. Responsible for developing most of the codebase, and designing or refining the game systems and behaviors. The game is currently available on itch.io.'
+      ]"
+    >
+    </app-career-card>
+
+    <!-- Babel MMO -->
+    <app-career-card
+      [media]="[
+        { type: 'video', url: 'https://www.youtube.com/embed/7QdF_CIBG1g' }
+      ]"
+      title="Babel MMO"
+      [items]="[
+        'Online Cooperative Role-Playing Game: Sole developer on an on-line role-playing videogame, planning, designing, and developing the entire project across the full stack. Tasks included implementing networking layers, game logic, and artificial intelligence for enemies; designing classes, creatures, game structure, and overall look and feel of the game; testing, maintaining, publishing, and creating a demonstration teaser with multiple players playing remotely. A proof-of-concept is open-sourced and playable, showcasing a demo with 3 unique classes and 3 unique enemies, using a client-server architecture. The game is currently available on itch.io.'
+      ]"
+    >
+    </app-career-card>
+
+    <!-- xDoom -->
+    <app-career-card
+      image="../../assets/img1.jpg"
+      title="xDoom"
+      [items]="[
+        'Online First-Person Shooter: A multi-player game for small teams, developed directly with OpenGL libraries. The goal was to learn the basics of how a game engine actually works, and implementing a distributed solution where multiple clients could play a deathmatch. devlog.'
+      ]"
+    >
+    </app-career-card>
+    <h3>Unrealized Ideas</h3>
+    <div class="career-cards">
+      <app-career-card
+        *ngFor="let idea of unrealizedItems"
+        [title]="idea.title"
+        [items]="idea.items"
+      ></app-career-card>
+    </div>
+  </div>
+</div>

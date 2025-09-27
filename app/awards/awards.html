@@ -1,0 +1,17 @@
+<div class="awards-section" id="achievements">
+  <h2 class="awards-heading">Awards and Distinctions</h2>
+  <ul class="awards-list">
+    <li *ngFor="let award of awards">
+      <!-- Se houver link para arquivo, mostramos o texto como link -->
+      <span *ngIf="award.fileLink">
+        <a [href]="award.fileLink" target="_blank">{{ award.text }}</a>
+      </span>
+      <!-- Se não houver link, apenas mostramos o texto -->
+      <span *ngIf="!award.fileLink">{{ award.text }}</span>
+      <!-- Se houver link para organização, adicionamos "by organization" -->
+      <span *ngIf="award.orgLink">
+        by <a [href]="award.orgLink" target="_blank">APPIA</a>
+      </span>
+    </li>
+  </ul>
+</div>
