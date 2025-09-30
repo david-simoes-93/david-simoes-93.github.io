@@ -1,0 +1,42 @@
+<div class="career-section" id="writing-career">
+  <h2 class="career-heading">Writing Career</h2>
+
+  <div class="career-cards">
+    <!-- Descent into Avernus -->
+    <app-career-card [media]="[
+        {
+          type: 'image',
+          url: 'https://www.dmsguild.com/images/8957/464926.jpg'
+        }
+      ]" title="Descent into Avernus: A Tier 4 Adaptation" [items]="descentItems"></app-career-card>
+
+    <!-- Tyranny of Dragons -->
+    <app-career-card [media]="[
+        {
+          type: 'image',
+          url: 'https://www.dmsguild.com/images/8957/437637.jpg'
+        }
+      ]" title="Tyranny of Dragons: Reloaded" [items]="tyrannyItems"></app-career-card>
+
+    <!-- Deicide -->
+    <app-career-card [media]="[
+        {
+          type: 'image',
+          url: 'https://www.dmsguild.com/images/8957/388847.jpg'
+        }
+      ]" title="Deicide" [items]="deicideItems"></app-career-card>
+  </div>
+
+  <!-- Related Interview Video -->
+  <h3>Related interviews:</h3>
+  <div class="video-container">
+    <div class="video-wrapper">
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/Fzq-DF25deM?si=84uzUtxzef_dQv-B&amp;start=3968" title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+</div>

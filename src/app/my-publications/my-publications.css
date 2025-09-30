@@ -1,0 +1,32 @@
+.publications {
+    max-width: 1000px;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.year-section {
+    margin-bottom: 1.5rem;
+}
+
+.year {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.2rem;
+}
+
+.projects {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    border: var(--main-blue) 1.5px solid;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.projects li {
+    margin-bottom: 0.75rem;
+    line-height: 1.4;
+}

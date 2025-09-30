@@ -1,0 +1,118 @@
+.about-section {
+  max-width: 1000px;
+  width: 98vw;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.about-card {
+  border: 1.5px solid var(--main-blue);
+  border-radius: 24px;
+  padding: 2rem;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-sizing: border-box;
+  margin-bottom: 1rem;
+}
+
+.about-card h2 {
+  font-size: 2.2rem;
+  font-family: 'Oswald', Arial, sans-serif;
+  color: var(--main-blue);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.about-card p {
+  font-size: 1.2rem;
+  font-family: 'Oswald', Arial, sans-serif;
+  color: #222;
+}
+
+.about-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.about-btn {
+  background: #fff;
+  border: 1.5px solid var(--main-blue);
+  border-radius: 16px;
+  color: var(--main-blue);
+  font-family: 'Oswald', Arial, sans-serif;
+  font-size: 1.15rem;
+  font-weight: bold;
+  padding: 1rem 2.5rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 119, 182, 0.07);
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s,
+    transform 0.2s,
+    box-shadow 0.2s;
+  text-decoration: none;
+  text-align: center;
+  outline: none;
+  min-width: 120px;
+  margin: 0 0.5rem;
+}
+
+.about-btn:hover,
+.about-btn:focus {
+  background: var(--main-blue);
+  color: #fff;
+  transform: scale(1.08);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+@media (max-width: 1000px) {
+  .about-section {
+    max-width: 98vw;
+    padding: 0 1vw;
+  }
+
+  .about-card {
+    padding: 1.5rem;
+  }
+
+  .about-buttons {
+    gap: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .about-section {
+    max-width: 99vw;
+    padding: 0 0.5vw;
+  }
+
+  .about-card {
+    padding: 1rem;
+    border-radius: 16px;
+  }
+
+  .about-buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .about-btn {
+    padding: 0.7rem 1.2rem;
+    font-size: 1rem;
+    min-width: 90px;
+    margin: 0.5rem 0;
+    width: 80vw;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,22 @@
+.main-header {
+  width: 100vw;
+  color: #fff;
+  padding: 140px 0 60px 0;
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  font-family: 'Oswald', Arial, sans-serif;
+  color: black;
+}
+
+.special-title {
+  font-family: 'MyTitleFont', 'Oswald', Arial, sans-serif !important;
+  font-size: 4.5rem;
+  margin: 1rem 0;
+  letter-spacing: 3px;
+  color: var(--main-blue);
+  font-weight: bold;
+}

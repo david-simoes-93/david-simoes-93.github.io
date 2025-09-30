@@ -1,0 +1,43 @@
+<div class="career-card">
+  <!-- Mídia somente se existir -->
+  <div class="media-container" *ngIf="media.length > 0">
+    <div class="slider-wrapper">
+      <div
+        class="slider"
+        [style.transform]="'translateX(-' + currentIndex * 100 + '%)'"
+      >
+        <ng-container *ngFor="let m of media">
+          <ng-container [ngSwitch]="m.type">
+            <div class="media-slide">
+              <iframe
+                *ngSwitchCase="'video'"
+                [src]="m.url | safeUrl"
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+              <img *ngSwitchCase="'image'" [src]="m.url" [alt]="title" />
+            </div>
+          </ng-container>
+        </ng-container>
+      </div>
+
+      <button *ngIf="media.length > 1" class="prev" (click)="prev()">
+        &#10094;
+      </button>
+      <button *ngIf="media.length > 1" class="next" (click)="next()">
+        &#10095;
+      </button>
+    </div>
+  </div>
+
+  <!-- Conteúdo textual sempre visível -->
+  <div class="career-card-content">
+    <h3 class="career-title">{{ title }}</h3>
+    <ul class="career-list">
+      <li *ngFor="let item of items">
+        <span class="dot"></span>
+        <span [innerHTML]="item"></span>
+      </li>
+    </ul>
+  </div>
+</div>

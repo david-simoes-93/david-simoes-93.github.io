@@ -1,0 +1,41 @@
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  padding-top: 70px;
+}
+
+body,
+html,
+* {
+  font-family: 'Oswald', Arial, sans-serif;
+}
+
+@font-face {
+  font-family: 'MyTitleFont';
+  src: url('./assets/fonts/Dune_Rise.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --main-blue: #0077B6;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-blue);
+}

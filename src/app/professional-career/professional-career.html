@@ -1,0 +1,29 @@
+<div class="career-section" id="professional-career">
+  <h2 class="career-heading">Professional Career</h2>
+  <div class="career-cards">
+    <!-- Card com múltiplos vídeos -->
+    <app-career-card
+      [media]="[
+        { type: 'video', url: 'https://www.youtube.com/embed/FxDZsl6ygPo' },
+        { type: 'video', url: 'https://www.youtube.com/embed/1CevUNqhRKA' }
+      ]"
+      title="Rapyuta Robotics"
+      [items]="[
+        'Japan - Senior Robotics Software Engineer (2021-Present): Member of the Distributed Intelligence team, focusing on high-level coordination among fleets of robots and humans. Responsible for designing, implementing, and maintaining components that interact with global or local entities to optimize time wasted for clients, by guiding each to the most suitable locations.'
+      ]"
+    >
+    </app-career-card>
+
+    <!-- Card com vídeo único -->
+    <app-career-card
+      [media]="[
+        { type: 'video', url: 'https://www.youtube.com/embed/8-ePGnLnCt4' }
+      ]"
+      title="Aeolus Robotics"
+      [items]="[
+        'Taiwan - Robotics Software Engineer (2020-2021): Member of the PLEX (Planning & Execution) team, focusing on high-level behavior control, framework design, and systems integration. Responsible for implementing business logic control, site deployment tools, and high-quality efficient simulation testing. Designed, implemented, and maintained the state machine component that guided the complete high-level behavior of the robot.'
+      ]"
+    >
+    </app-career-card>
+  </div>
+</div>

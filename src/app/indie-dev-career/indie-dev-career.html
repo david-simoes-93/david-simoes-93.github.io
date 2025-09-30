@@ -1,0 +1,30 @@
+<div class="career-section" id="game-dev-career">
+  <h2 class="career-heading">Game Dev Career</h2>
+  <div class="career-cards">
+    <!-- Chrono -->
+    <app-career-card [media]="[
+        { type: 'video', url: 'https://www.youtube.com/embed/oHSmdalMHRI' }
+      ]" title="Chrono" [items]="chronoItems">
+    </app-career-card>
+
+    <!-- The Lich Queen -->
+    <app-career-card [media]="[
+        {
+          type: 'image',
+          url: 'https://img.itch.zone/aW1hZ2UvMjM5ODc0MS8xNDE5OTQyOS5wbmc=/original/fFNF%2BX.png'
+        }
+      ]" title="The Lich Queen" [items]="lichQueenItems">
+    </app-career-card>
+
+    <!-- Babel MMO -->
+    <app-career-card [media]="[
+        { type: 'video', url: 'https://www.youtube.com/embed/7QdF_CIBG1g' }
+      ]" title="Babel MMO" [items]="babelMmoItems">
+    </app-career-card>
+  </div>
+
+  <h3>Unrealized Ideas</h3>
+  <div class="career-cards">
+    <app-career-card *ngFor="let idea of unrealizedItems" [title]="idea.title" [items]="idea.items"></app-career-card>
+  </div>
+</div>
