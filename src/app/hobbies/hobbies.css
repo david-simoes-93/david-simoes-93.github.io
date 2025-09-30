@@ -4,9 +4,11 @@
     align-items: center;
     padding: 2rem 1rem;
     width: 100%;
+    margin-bottom: 6rem;
 }
 
 .hobbies-heading {
+    font-family: 'MyTitleFont', 'Oswald', Arial, sans-serif !important;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
@@ -38,7 +40,7 @@
     max-width: 1000px;
     width: 100%;
     overflow: visible;
-    gap: 1.5rem; 
+    gap: 1.5rem;
 }
 
 .hobby-card {

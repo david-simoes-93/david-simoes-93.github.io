@@ -3,13 +3,14 @@
 
   <div class="hobbies-grid">
     <div *ngFor="let hobby of hobbies" class="hobby-card">
-      <h3 class="hobby-title">{{ hobby.title }}</h3>
+      <h3 class="hobby-title">
+        <a [href]="hobby.link" target="_blank" class="hobby-link">
+          {{ hobby.title }}
+        </a>
+      </h3>
       <hr class="hobby-divider" />
       <p class="hobby-description">
         {{ hobby.description }}
-        <a [href]="hobby.link" target="_blank" class="hobby-link">
-          {{ hobby.linkText }}
-        </a>
       </p>
     </div>
   </div>

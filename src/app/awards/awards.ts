@@ -9,73 +9,110 @@ import { Component } from '@angular/core';
 export class Awards {
   awards = [
     {
-      text: 'Best PhD Thesis Award 2019–20 in Artificial Intelligence by APPIA: Winner.',
+      text: 'Best PhD Thesis Award 2019–20 in Artificial Intelligence: Winner.',
       fileLink: './assets/21 BestPhD.pdf',
+      orgName: 'APPIA',
       orgLink:
         'https://www.appia.pt/2021/03/19/rede-appia-premio-melhor-tese-de-doutoramento-em-inteligencia-artificial-2019-2020-deadline-28-de-maio-de-2021/',
     },
     {
-      text: '3D Soccer Simulation League, RoboCup 19: 23rd RoboCup International Competition and Symposium: 6th place.',
+      text: '3D Soccer Simulation League: 6th place.',
+      orgName: 'RoboCup 19',
+      orgLink: 'https://2019.robocup.org/',
     },
     {
-      text: '3D Soccer Simulation League, ICARSC 19: 19th IEEE International Conference on Autonomous Robot Systems and Competition: 3rd place.',
+      text: '3D Soccer Simulation League: 3rd place.',
+      orgName: 'ICARSC 19',
+      orgLink: 'https://ewh.ieee.org/soc/ras/conf/technicallycosponsored/icarsc/2019/web.fe.up.pt/_icarsc2019/index-2.html',
     },
     {
-      text: '2019 Micro-Rato by IEEE Student Branch from the University of Aveiro: 2nd place in the MazeRunner category, 1st place in the Explorer category, and the "Best Robot" award.',
+      text: '2019 Micro-Rato: 2nd place in the MazeRunner category, 1st place in the Explorer category, and the "Best Robot" award.',
       fileLink: './assets/19 MicroRato.pdf',
+      orgName: 'IEEE Student Branch from the University of Aveiro',
+      orgLink: 'https://ieee.web.ua.pt/',
     },
     {
-      text: '3D Soccer Simulation League, RoboCup 18: 22nd RoboCup International Competition and Symposium: 3rd place.',
+      text: '3D Soccer Simulation League: 3rd place.',
+      orgName: 'RoboCup 18',
+      orgLink: 'https://2018.robocup.org/',
     },
     {
-      text: '3D Soccer Simulation League, ICARSC 18: 18th IEEE International Conference on Autonomous Robot Systems and Competitions: 2nd place.',
+      text: '3D Soccer Simulation League: 2nd place.',
+      orgName: 'ICARSC 18',
+      orgLink: 'https://robotica2018.festivalrobotica.pt/pt/icarsc',
     },
     {
-      text: '2018 Micro-Rato by IEEE Student Branch from the University of Aveiro: 2nd place in the MazeRunner category, and 1st place in the Explorer category.',
+      text: '2018 Micro-Rato: 2nd place in the MazeRunner category, and 1st place in the Explorer category.',
       fileLink: './assets/18 MicroRato.pdf',
+      orgName: 'IEEE Student Branch from the University of Aveiro',
+      orgLink: 'https://ieee.web.ua.pt/',
     },
     {
-      text: '3D Soccer Simulation League, RoboCup 17: 21st RoboCup International Competition and Symposium: 7th place.',
+      text: '3D Soccer Simulation League: 7th place.',
+      orgName: 'RoboCup 17',
+      orgLink: 'https://2017.robocup.org/eng/index.html',
     },
     {
-      text: '3D Soccer Simulation League, ICARSC 17: 17th IEEE International Conference on Autonomous Robot Systems and Competitions: 2nd place.',
+      text: '3D Soccer Simulation League: 2nd place.',
+      orgName: 'ICARSC 17',
+      orgLink: 'https://icarsc2017.isr.uc.pt/index.php/en/',
     },
     {
       text: '2017 BioRace Challenge, in Estarreja: 56th place.',
       fileLink: './assets/17 BioRace.pdf',
     },
     {
-      text: '2017 Sunset Hackathon by HardWare City, on a Bosch sponsored project: 1st place.',
+      text: '2017 Sunset Hackathon, on a Bosch sponsored project: 1st place.',
       fileLink: './assets/17 sunsetHackathon.pdf',
+      orgName: 'HardWare City',
+      orgLink: 'https://hardwarecity.org/',
     },
     {
-      text: '3D Soccer Simulation League, RoboCup 16: 20th RoboCup International Competition and Symposium: 3rd place.',
+      text: '3D Soccer Simulation League: 3rd place.',
+      orgName: 'RoboCup 16',
+      orgLink: 'https://2016.robocup.org/web/index-2.html',
     },
     {
-      text: '3D Soccer Simulation League, ICARSC 16: 16th IEEE International Conference on Autonomous Robot Systems and Competitions: 2nd place.',
+      text: '3D Soccer Simulation League: 2nd place.',
+      orgName: 'ICARSC 16',
+      orgLink: 'http://icarsc2016.ipb.pt/',
     },
     {
-      text: '2015 OpenMind competition, by ESEGUR: top 10.',
+      text: '2015 OpenMind competition: top 10.',
+      orgName: 'ESEGUR',
+      orgLink: 'https://trablisa.esegur.pt/',
     },
     {
-      text: '2014/2015 Merit Grant by the University of Aveiro: 18.8/20 GPA.',
+      text: '2014/2015 Merit Grant: 18.8/20 GPA.',
       fileLink: './assets/14-15 Bolsa Merito.pdf',
+      orgName: 'the University of Aveiro',
+      orgLink: 'https://www.ua.pt/',
     },
     {
-      text: '2015 Ciber-Rato by IEEE Student Branch from the University of Aveiro: 1st place.',
+      text: '2015 Ciber-Rato: 1st place.',
+      orgName: 'IEEE Student Branch from the University of Aveiro',
+      orgLink: 'https://ieee.web.ua.pt/',
     },
     {
-      text: "2010 Best Student Prize 'Dr. António Cláudio' by the Municipality of Almeirim: 1st place.",
+      text: "2010 Best Student Prize 'Dr. António Cláudio': 1st place.",
       fileLink: './assets/10 AntonioClaudio.jpg',
+      orgName: 'the Municipality of Almeirim',
+      orgLink: 'https://www.cm-almeirim.pt/',
     },
     {
-      text: "2009 RALLY@MATIC by the Secondary School 'Marquesa da Alorna': 1st place.",
+      text: "2009 RALLY@MATIC: 1st place.",
+      orgName: 'the Secondary School "Marquesa da Alorna"',
+      orgLink: 'https://ecoescolas.abaae.pt/escola/escola-secundaria-marquesa-de-alorna/',
     },
     {
-      text: '2008 ETC Website Story by the English Theatre Company: 1st place.',
+      text: '2008 ETC Website Story: 1st place.',
+      orgName: 'the English Theatre Company',
+      orgLink: 'http://www.englishtheatrecompany.co.uk/',
     },
     {
-      text: '2007 Canguru Matemático Sem Fronteiras Contest by the Sociedade Portuguesa de Matemática: 1st regional place, 27th national place.',
+      text: '2007 Canguru Matemático Sem Fronteiras Contest: 1st regional place, 27th national place.',
+      orgName: 'the Sociedade Portuguesa de Matemática',
+      orgLink: 'https://portal.spm.pt/',
     },
   ];
 }

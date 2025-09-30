@@ -3,9 +3,11 @@
     width: 98vw;
     margin: 0 auto;
     box-sizing: border-box;
+    margin-bottom: 6rem;
 }
 
 .career-heading {
+    font-family: 'MyTitleFont', 'Oswald', Arial, sans-serif !important;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;

@@ -6,6 +6,7 @@
 }
 
 .career-heading {
+    font-family: 'MyTitleFont', 'Oswald', Arial, sans-serif !important;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
@@ -32,6 +33,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 .career-cards app-career-card {
     flex: 1 1 420px;
     display: flex;

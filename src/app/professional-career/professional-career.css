@@ -3,9 +3,11 @@
     width: 98vw;
     margin: 0 auto;
     box-sizing: border-box;
+    margin-bottom: 6rem;
 }
 
 .career-heading {
+    font-family: 'MyTitleFont', 'Oswald', Arial, sans-serif !important;
     font-size: 2rem;
     font-weight: bold;
     margin-bottom: 1.5rem;
@@ -29,21 +31,21 @@
 }
 
 .video-wrapper {
-  position: relative;
-  width: 100%;
-  padding-top: 56.25%;
-  overflow: hidden;
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    overflow: hidden;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
 }
 
 .video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 .career-cards app-career-card:last-child:nth-child(odd) {
@@ -51,6 +53,7 @@
     margin-left: auto;
     margin-right: auto;
 }
+
 .career-cards app-career-card {
     flex: 1 1 420px;
     display: flex;

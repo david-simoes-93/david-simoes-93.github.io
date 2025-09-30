@@ -10,7 +10,7 @@
       <span *ngIf="!award.fileLink">{{ award.text }}</span>
       <!-- Se houver link para organização, adicionamos "by organization" -->
       <span *ngIf="award.orgLink">
-        by <a [href]="award.orgLink" target="_blank">APPIA</a>
+        By <a [href]="award.orgLink" target="_blank">{{ award.orgName }}</a>.
       </span>
     </li>
   </ul>
