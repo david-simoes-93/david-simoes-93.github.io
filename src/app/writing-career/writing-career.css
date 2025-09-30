@@ -1,7 +1,7 @@
 .career-section {
-    max-width: 1000px;
+    max-width: 70vw;
     width: 98vw;
-    margin: 0 auto;
+    margin: 2rem auto;
     box-sizing: border-box;
     margin-bottom: 6rem;
 }
@@ -16,13 +16,10 @@
 }
 
 .career-cards {
-    display: flex;
-    justify-content: space-between;
-    gap: 2rem;
-    flex-wrap: wrap;
-    width: 100%;
-    margin: 2rem 0;
-    align-items: stretch;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, max-content));
+    gap: 4rem;
 }
 
 .career-cards app-career-card:last-child:nth-child(odd) {
