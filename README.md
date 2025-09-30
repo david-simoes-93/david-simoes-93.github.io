@@ -24,6 +24,7 @@ This will compile your project and store the build artifacts in the `dist/` dire
 For production, run
 
 ```bash
-npm run ng -- build --configuration production --base-href=https://david-simoes-93.github.io
+npm run ng -- build --configuration production --base-href=https://david-simoes.org/
 ```
 
+Then copy the files in `dist/Portfolio/browser` to the `main` branch
