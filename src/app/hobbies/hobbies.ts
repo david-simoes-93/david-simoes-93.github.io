@@ -34,7 +34,7 @@ export class Hobbies {
     },
     {
       title: 'Gamer',
-      description: 'Big fan of all games, except for sports stuff.',
+      description: 'Big fan of any kind of challenging game (with the exception of sports ones!)',
       link: 'https://steamcommunity.com/id/bluemoon93',
       image: 'img/hobbies/pokemon-gen4-top3.png',
     },

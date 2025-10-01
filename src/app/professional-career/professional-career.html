@@ -1,6 +1,12 @@
 <div class="career-section" id="professional-career">
   <h2 class="career-heading">Professional Career</h2>
   <div class="career-cards">
+    <app-career-card [media]="[]" title="Alchemi.bio" [items]="[
+        'USA - Senior Software Engineer (2025-Present)',
+        'Team lead on the Guardian project, which inspects pharmaceutical reports for compliance against mandatory regulations. The project leverages LLMs, heuristics, and deterministic checks to ensure proper data validity.'
+      ]">
+    </app-career-card>
+
     <!-- Card com múltiplos vídeos -->
     <app-career-card [media]="[
         { type: 'video', url: 'https://www.youtube.com/embed/FxDZsl6ygPo' },

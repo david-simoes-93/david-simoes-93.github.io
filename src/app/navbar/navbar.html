@@ -2,16 +2,16 @@
   <div class="navbar-container">
     <button class="navbar-toggle" (click)="toggleMenu()">&#9776;</button>
     <div class="navbar-links" [class.active]="menuOpen">
-      <a href="#about-me">About Me</a>
-      <a href="#professional-career">Professional Career</a>
-      <a href="#game-dev-career">Game Development</a>
-      <a href="#writing-career">Writer</a>
-      <a href="#researching-career">Researcher</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#achievements">Achievements</a>
-      <a href="#hobbies">Hobbies</a>
-      <a href="#contact">Contact Me</a>
+      <a href="#about-me" (click)="closeMenu()">About Me</a>
+      <a href="#professional-career" (click)="closeMenu()">Professional Career</a>
+      <a href="#game-dev-career" (click)="closeMenu()">Game Development</a>
+      <a href="#writing-career" (click)="closeMenu()">Writer</a>
+      <a href="#researching-career" (click)="closeMenu()">Researcher</a>
+      <a href="#projects" (click)="closeMenu()">Projects</a>
+      <a href="#education" (click)="closeMenu()">Education</a>
+      <a href="#achievements" (click)="closeMenu()">Achievements</a>
+      <a href="#hobbies" (click)="closeMenu()">Hobbies</a>
+      <a href="#contact" (click)="closeMenu()">Contact Me</a>
     </div>
   </div>
 </nav>
