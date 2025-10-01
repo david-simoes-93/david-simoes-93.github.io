@@ -29,14 +29,13 @@
 
   <!-- Related Interview Video -->
   <h3>Related interviews:</h3>
-  <div class="video-container">
-    <div class="video-wrapper">
-      <iframe width="560" height="315"
-        src="https://www.youtube.com/embed/Fzq-DF25deM?si=84uzUtxzef_dQv-B&amp;start=3968" title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-      </iframe>
-    </div>
+
+  <div class="career-cards">
+    <app-career-card [media]="[
+        { type: 'video', url: 'https://www.youtube.com/embed/Fzq-DF25deM?t=3968' }
+      ]" title="The Dungeoncast - Ep. 392" [items]="[
+        'This episode\'s Creator\'s Corner feature Writer David Simoes, author of the 5E campaign book Deicide and supplemental campaign book Tyranny of Dragons: Reloaded with all proceeds donated to Doctors Without Borders.'
+      ]">
+    </app-career-card>
   </div>
 </div>
