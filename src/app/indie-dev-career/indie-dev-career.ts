@@ -39,7 +39,7 @@ export class IndieDevCareer implements OnInit {
 
     this.babelMmoItems = [
       this.sanitizer.bypassSecurityTrustHtml(
-        'Online Cooperative Role-Playing Game: Sole developer on an on-line role-playing videogame, planning, designing, and developing the entire project across the full stack. Tasks included implementing networking layers, game logic, and artificial intelligence for enemies; designing classes, creatures, game structure, and overall look and feel of the game; testing, maintaining, publishing, and creating a demonstration teaser with multiple players playing remotely.'
+        'Online Cooperative Role-Playing Game: Sole developer on an online role-playing videogame, planning, designing, and developing the entire project across the full stack. Tasks included implementing networking layers, game logic, and artificial intelligence for enemies; designing classes, creatures, game structure, and overall look and feel of the game; testing, maintaining, publishing, and creating a demonstration teaser with multiple players playing remotely.'
       ),
       this.sanitizer.bypassSecurityTrustHtml(
         'A proof-of-concept is <a href="https://github.com/david-simoes-93/babel-mmo" target="_blank">open-sourced</a> and playable, showcasing a demo with 3 unique classes and 3 unique enemies, using a client-server architecture.'

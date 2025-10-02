@@ -14,7 +14,10 @@
 
 .special-title {
   font-family: 'MyTitleFont', 'Oswald', Arial, sans-serif !important;
-  font-size: 4.5rem;
+  /* Min: 2.5rem, Ideal: 6vw, Max: 4.5rem */
+  font-size: clamp(3.5rem, 6vw, 4.5rem);
+  overflow-wrap: break-word;
+  word-break: break-word;
   margin: 1rem 0;
   letter-spacing: 3px;
   color: var(--main-blue);

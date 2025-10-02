@@ -18,10 +18,10 @@
 }
 
 .social-links {
-    display: grid;
-    grid-template-columns: repeat(8, auto);
+    display: flex;
+    flex-wrap: wrap;
     gap: 1rem 2rem;
-    text-align: center;
+    justify-content: center;
 }
 
 .social-links a {
