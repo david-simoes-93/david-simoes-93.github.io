@@ -66,6 +66,22 @@ export class IndieDevCareer implements OnInit {
           ),
         ],
       },
+      {
+        title: 'Cave Dive',
+        items: [
+          this.sanitizer.bypassSecurityTrustHtml(
+            'A horror game where the player is cavediving and exploring a cave. They need to set line, swim, fight against silt, currents, air levels, use proper gas mix, and a bunch of other things. They could take multiple attempts to explore it. If they died, the next time they went there, there\'d be a corpse decomposing there!.'
+          ),
+        ],
+      },
+      {
+        title: 'Process: Kill',
+        items: [
+          this.sanitizer.bypassSecurityTrustHtml(
+            'Inspired by Tron. The player chooses an .exe file on their machine, which runs under some static analyzers and some LLM to create a procedurally-generated game avatar with stats (attack, health, size, speed, etc). Then players fight off in arenas across multiple games.'
+          ),
+        ],
+      },
     ];
   }
 }

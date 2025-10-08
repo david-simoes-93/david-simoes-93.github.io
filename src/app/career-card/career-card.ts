@@ -9,13 +9,14 @@ interface MediaItem {
 @Component({
   selector: 'app-career-card',
   templateUrl: './career-card.html',
-  styleUrls: ['./career-card.css'], // Corrigi de styleUrl para styleUrls
+  styleUrls: ['./career-card.css'],
   standalone: false,
 })
 export class CareerCard {
   @Input() media: MediaItem[] = [];
   @Input() title!: string;
   @Input() items: SafeHtml[] = [];
+  @Input() link: string = "";
 
   currentIndex = 0;
 

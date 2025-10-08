@@ -187,3 +187,18 @@
         max-height: 160px;
     }
 }
+
+
+.career-link {
+    font-family: 'Oswald', Arial, sans-serif;
+    color: var(--main-blue);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 1rem 0 0.5rem 0;
+    text-align: left;
+    width: 100%;
+}
+
+.career-link:hover {
+    text-decoration: underline;
+}
