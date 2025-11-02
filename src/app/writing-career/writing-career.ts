@@ -59,7 +59,7 @@ export class WritingCareer implements OnInit {
 
     this.deicideItems = [
       this.sanitizer.bypassSecurityTrustHtml(
-        'A D&D homebrew 1-20 level campaign. Hundreds of years after the beginning of D&D 5th Edition, involving the Overgod Ao trapped inside an artifact, mythical artifacts, crime lords, and multiple planes.'
+        'A D&D homebrew 1-20 level campaign. Hndreds of years after the beginning of 5e, with the Overgod Ao gone, the characters learn about the missing Gods, about the mythical Wand of Wonders (which carries the powers of the Gods), and about the crime lord Kaiser Soze. They will be able to visit other realms, planes, and dimensions, and either ally with the Crime Lord, release the Gods, or keep their power for themselves.'
       ),
       this.sanitizer.bypassSecurityTrustHtml(
         'Characters learn about missing Gods, the Wand of Wonders, and crime lord Kaiser Soze. They can ally with the crime lord or release the Gods for themselves.'
