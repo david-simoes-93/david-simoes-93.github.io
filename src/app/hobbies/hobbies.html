@@ -11,7 +11,12 @@
       <hr class="hobby-divider" />
       <p class="hobby-description">
         {{ hobby.description }}
+        <span *ngIf="hobby.annex">
+          <a [href]="hobby.annex" target="_blank">{{ hobby.annexText }}</a>
+        </span>
       </p>
+      <!--<hr class="hobby-divider" />
+      <div [innerHTML]="hobby.embed"></div>-->
     </div>
   </div>
 </div>

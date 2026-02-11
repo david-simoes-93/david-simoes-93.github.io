@@ -53,6 +53,13 @@
     transform: translateX(var(--shift-x));
 }
 
+.hobby-image {
+  width: 95%; /* Makes the image as wide as its parent container */
+  max-width: 95%; /* Optional: Makes it slightly less wide (e.g., 95%) */
+  height: auto; /* Maintains the aspect ratio */
+  display: block; /* Removes extra space below the image */
+}
+
 .hobby-card:hover {
     transform: translateX(var(--shift-x)) translateY(-4px);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);

@@ -34,9 +34,10 @@ export class Hobbies {
     },
     {
       title: 'Gamer',
-      description: 'Big fan of any kind of challenging game (with the exception of sports ones!)',
+      description: 'Avid player of all genres (except for sports sims). Former ',
       link: 'https://steamcommunity.com/id/bluemoon93',
-      image: 'img/hobbies/pokemon-gen4-top3.png',
+      annexText: '#1 Rank in Online Pokémon Battling.',
+      annex: `https://web.archive.org/web/20260211172226/https://pokemonshowdown.com/ladder/gen5randombattle`,
     },
   ];
 }
