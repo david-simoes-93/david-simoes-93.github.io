@@ -14,6 +14,7 @@ export class SoftwareProjects implements OnInit {
   igdbIndexerItems: SafeHtml[] = [];
   microEeveeItems: SafeHtml[] = [];
   smartOliItems: SafeHtml[] = [];
+  commercialMapItems: SafeHtml[] = [];
 
   constructor(private sanitizer: DomSanitizer) { }
 
@@ -72,6 +73,15 @@ export class SoftwareProjects implements OnInit {
       ),
       this.sanitizer.bypassSecurityTrustHtml(
         'Open-sourced on <a href="https://github.com/david-simoes-93/SmartOLI" target="_blank">GitHub</a>.'
+      ),
+    ];
+
+    this.commercialMapItems = [
+      this.sanitizer.bypassSecurityTrustHtml(
+        'An online map that shows all the commercial buildings in Portugal, allowing users to geo-search for companies of a specific category of their choosing.'
+      ),
+      this.sanitizer.bypassSecurityTrustHtml(
+        'Open-sourced on <a href="https://github.com/david-simoes-93/mapa-do-comercio" target="_blank">GitHub</a>.'
       ),
     ];
   }

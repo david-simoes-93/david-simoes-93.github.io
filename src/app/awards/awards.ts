@@ -10,7 +10,7 @@ export class Awards {
   awards = [
     {
       text: 'Best PhD Thesis Award 2019–20 in Artificial Intelligence: Winner.',
-      fileLink: './assets/21 BestPhD.pdf',
+      fileLink: './assets/21 BestPhD.png',
       orgName: 'APPIA',
       orgLink:
         'https://www.appia.pt/2021/03/19/rede-appia-premio-melhor-tese-de-doutoramento-em-inteligencia-artificial-2019-2020-deadline-28-de-maio-de-2021/',
