@@ -16,7 +16,7 @@ export class ResearchingCareer implements OnInit {
   ngOnInit(): void {
     this.intellwheelItems = [
       this.sanitizer.bypassSecurityTrustHtml(
-        'Robotics Researcher for <a href="www.ieeta.pt/index.php/project/intellwheels-2-0-intelligent-wheelchair-with-flexible-multimodal-interface-and-realistic-simulator/" target="_blank">Intellwheels 2.0</a> (2019-2020): A smart wheelchair with a multi-modal interface and realistic simulator, based on ROS1. Worked on the simulator and navigation modules of the chair, reverse engineering its controller and integrating it as a ROS module. Migrated a SLAM ROS package from ROS1 to ROS2.'
+        'Robotics Researcher for <a href="https://www.ieeta.pt/index.php/project/intellwheels-2-0-intelligent-wheelchair-with-flexible-multimodal-interface-and-realistic-simulator/" target="_blank">Intellwheels 2.0</a> (2019-2020): A smart wheelchair with a multi-modal interface and realistic simulator, based on ROS1. Worked on the simulator and navigation modules of the chair, reverse engineering its controller and integrating it as a ROS module. Migrated a SLAM ROS package from ROS1 to ROS2.'
       ),
     ];
 

@@ -101,7 +101,7 @@ export class Awards {
     },
     {
       text: "2009 RALLY@MATIC: 1st place.",
-      orgName: 'the Secondary School "Marquesa da Alorna"',
+      orgName: 'the Secondary School "Marquesa de Alorna"',
       orgLink: 'https://ecoescolas.abaae.pt/escola/escola-secundaria-marquesa-de-alorna/',
     },
     {

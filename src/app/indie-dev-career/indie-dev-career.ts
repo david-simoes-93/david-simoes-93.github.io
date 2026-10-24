@@ -18,7 +18,7 @@ export class IndieDevCareer implements OnInit {
   ngOnInit(): void {
     this.chronoItems = [
       this.sanitizer.bypassSecurityTrustHtml(
-        'Puzzle Platformer Game: Sole developer of the a puzzle platformer videogame, planning, designing, and developing the entire project across the full stack. Tasks included designing all the puzzles, implementing game logic, refining the overall look and feel of the game, testing, maintaining, and publishing it.'
+        'Puzzle Platformer Game: Sole developer of a puzzle platformer videogame, planning, designing, and developing the entire project across the full stack. Tasks included designing all the puzzles, implementing game logic, refining the overall look and feel of the game, testing, maintaining, and publishing it.'
       ),
       this.sanitizer.bypassSecurityTrustHtml(
         'The game is currently available on <a href="https://store.steampowered.com/app/3015650/Chrono/" target="_blank">Steam</a>, <a href="https://store.epicgames.com/en-US/p/chrono-909256" target="_blank">Epic Games</a>, and <a href="https://bluemoon93.itch.io/chrono" target="_blank">itch.io</a>.'
@@ -70,7 +70,7 @@ export class IndieDevCareer implements OnInit {
         title: 'Cave Dive',
         items: [
           this.sanitizer.bypassSecurityTrustHtml(
-            'A horror game where the player is cavediving and exploring a cave. They need to set line, swim, fight against silt, currents, air levels, use proper gas mix, and a bunch of other things. They could take multiple attempts to explore it. If they died, the next time they went there, there\'d be a corpse decomposing there!.'
+            'A horror game where the player is cave diving and exploring a cave. They need to set line, swim, fight against silt, currents, air levels, use proper gas mix, and a bunch of other things. They could take multiple attempts to explore it. If they died, the next time they went there, there\'d be a corpse decomposing there!'
           ),
         ],
       },
@@ -78,7 +78,7 @@ export class IndieDevCareer implements OnInit {
         title: 'Process: Kill',
         items: [
           this.sanitizer.bypassSecurityTrustHtml(
-            'Inspired by Tron. The player chooses an .exe file on their machine, which runs under some static analyzers and some LLM to create a procedurally-generated game avatar with stats (attack, health, size, speed, etc). Then players fight off in arenas across multiple games.'
+            'Inspired by Tron. The player chooses an .exe file on their machine, which runs under some static analyzers and some LLM to create a procedurally-generated game avatar with stats (attack, health, size, speed, etc). Then players fight it out in arenas across multiple games.'
           ),
         ],
       },
