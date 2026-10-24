@@ -27,4 +27,4 @@ For production, run
 npm run ng -- build --configuration production --base-href=https://david-simoes.org/
 ```
 
-Then copy the files in `dist/Portfolio/browser` to the `main` branch
+Deployment is automatic: pushing to `david/angular` runs `.github/workflows/deploy.yml`, which builds the site and commits `dist/Portfolio/browser` to the `main` branch (served by GitHub Pages). Files on `main` that are not part of the build (`CNAME`, `chrono.html`, `privacy.html`, `img/`, `vids/`) are kept; add any new ones to the `KEEP` list in the workflow.

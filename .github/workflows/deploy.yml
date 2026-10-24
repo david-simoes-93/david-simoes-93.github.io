@@ -1,0 +1,63 @@
+# Builds the Angular site and publishes the output to the `main` branch,
+# which GitHub Pages serves at https://david-simoes.org/
+name: Deploy to main
+
+on:
+  push:
+    branches: [david/angular]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: deploy
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: source
+
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          path: site
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: source/package-lock.json
+
+      - name: Build
+        working-directory: source
+        run: |
+          npm ci
+          npx ng build --configuration production --base-href=https://david-simoes.org/
+
+      # Files on main that don't come from the Angular build. Everything else
+      # on main is replaced by the fresh build, so stale bundles and deleted
+      # assets disappear.
+      - name: Replace build output on main
+        working-directory: site
+        run: |
+          KEEP='^(\.git|\.gitignore|CNAME|chrono\.html|privacy\.html|img|vids)$'
+          ls -A | grep -Ev "$KEEP" | xargs -r rm -rf
+          cp -r ../source/dist/Portfolio/browser/. .
+
+      - name: Commit and push
+        working-directory: site
+        run: |
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to deploy"
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898299+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Deploy: $(git -C ../source log -1 --format=%s)" -m "From ${GITHUB_SHA}"
+          git push
